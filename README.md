@@ -1,1 +1,1 @@
-# my_service
+The purpose of the Notepad Service is to initiate the Notepad application through the Windows API, more precisely by utilizing the CreateProcessAsUser function. This choice is made to enable the service to launch Notepad in the context of the currently logged-in user. Functioning as a Windows service, it can seamlessly run in the background and be managed through the Service Control Manager.
