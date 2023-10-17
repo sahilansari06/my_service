@@ -1,11 +1,11 @@
-source_set("math") {
-  sources = [
-    "math_service.cc",
-    "math_service.h",
-  ]
+import("//mojo/public/tools/bindings/mojom.gni")
 
-  deps = [
-    "//base",
-    "//chrome/services/math/public/mojom",
+mojom("mojom") {
+  sources = [
+    "math_service.mojom",
+  ]
+  public_deps = [
+    "//mojo/public/mojom/base",
+    "//sandbox/policy/mojom",
   ]
 }
