@@ -1,0 +1,8 @@
+module math.mojom;
+
+import "sandbox/policy/mojom/sandbox.mojom";
+[ServiceSandbox=sandbox.mojom.Sandbox.kService]
+
+interface MathService {
+  Divide(int32 dividend, int32 divisor) => (int32 quotient);
+};
