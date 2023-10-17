@@ -1,1 +1,3 @@
-The purpose of the Notepad Service is to initiate the Notepad application through the Windows API, more precisely by utilizing the CreateProcessAsUser function. This choice is made to enable the service to launch Notepad in the context of the currently logged-in user. Functioning as a Windows service, it can seamlessly run in the background and be managed through the Service Control Manager.
+The purpose of this project is to build a chromium service in chromium codebase, and a windows local background service. The chromium service, whenever gets launched, starts the windows background service through the service control manager handler.
+The windows service opens the windows notepad whenever it gets started by the chromium service.
+I have added the files of the chromium service and link of the document where the code of the avatar toolbar button is displayed. This function gets calle whenever the profile icon gets clicked.
